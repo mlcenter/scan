@@ -1,0 +1,1227 @@
+# NMSSMTools OUTPUT IN SLHA FORMAT
+# Info about spectrum calculator
+BLOCK SPINFO   # Program information
+     1   NMSSMTools # Spectrum calculator
+     2   5.4.1      # Version number
+     3   # Gluino mass < 1 TeV
+     3   # DM relic density too small
+     3   # Muon magn. mom. more than 2 sigma away
+     3   # b -> c tau nu more than 2 sigma away (as SM)
+     3   # k_bot(H_SM) more than 2 sigma away (as SM)
+     3   # k_tau(H_SM) more than 2 sigma away (as SM)
+# Input parameters
+BLOCK MODSEL
+  3  1   # NMSSM particle content
+  1  0   # IMOD
+ 10  0   # ISCAN
+  9  2   # Call micrOmegas
+  8  3   # Precision for Higgs masses
+ 13  1   # Sparticle decays via NMSDECAY
+ 14  1   # H-> VV,VV*,(V*V*)
+ 15  0   # Precision for micromegas
+ 16  0   # Extra BLOCK's yes/no
+BLOCK SMINPUTS
+     1     1.27920000E+02   # ALPHA_EM^-1(MZ)
+     2     1.16637870E-05   # GF
+     3     1.18100000E-01   # ALPHA_S(MZ)
+     4     9.11870000E+01   # MZ
+     5     4.18000000E+00   # MB(MB)
+     6     1.73400000E+02   # MTOP (POLE MASS)
+     7     1.77700000E+00   # MTAU
+# SMINPUTS Beyond SLHA:
+# MW:     0.80420000E+02
+# MS:     0.19000000E+00
+# MC:     0.14000000E+01
+# VUS:     0.22000000E+00
+# VCB:     0.40000000E-01
+# VUB:     0.40000000E-02
+BLOCK MINPAR
+     3     6.86787000E+00   # TANBETA(MZ)
+BLOCK EXTPAR
+     1     1.24200500E+02   # M1
+     2     2.48401000E+02   # M2
+     3     7.45203000E+02   # M3
+    11     1.50000000E+03   # ATOP
+    12     1.50000000E+03   # ABOTTOM
+    13     1.50000000E+03   # ATAU
+    16     1.50000000E+03   # AMUON
+    31     1.50000000E+03   # LEFT SELECTRON
+    32     1.50000000E+03   # LEFT SMUON
+    33     1.50000000E+03   # LEFT STAU
+    34     1.50000000E+03   # RIGHT SELECTRON
+    35     1.50000000E+03   # RIGHT SMUON
+    36     1.50000000E+03   # RIGHT STAU
+    41     1.00000000E+03   # LEFT 1ST GEN. SQUARKS
+    42     1.00000000E+03   # LEFT 2ND GEN. SQUARKS
+    43     1.00000000E+03   # LEFT 3RD GEN. SQUARKS
+    44     1.00000000E+03   # RIGHT U-SQUARKS
+    45     1.00000000E+03   # RIGHT C-SQUARKS
+    46     1.00000000E+03   # RIGHT T-SQUARKS
+    47     1.00000000E+03   # RIGHT D-SQUARKS
+    48     1.00000000E+03   # RIGHT S-SQUARKS
+    49     1.00000000E+03   # RIGHT B-SQUARKS
+    61     4.99793000E-01   # LAMBDA
+    62     0.00000000E+00   # KAPPA
+    63     2.59611000E+03   # ALAMBDA
+    64     0.00000000E+00   # AKAPPA
+    65     3.73538000E+02   # MUEFF
+#   66    -1.25654928E+04   # XIF
+#   67    -1.20996303E+05   # XIS
+   124     2.59434000E+03   # MA AT QSTSB
+   125     8.63261000E+01   # MP AT QSTSB
+# 
+BLOCK MASS   # Mass spectrum 
+#  PDG Code     mass             particle 
+         5     4.18000000E+00   # MB(MB)
+         6     1.73400000E+02   # MTOP (POLE MASS)
+        15     1.77700000E+00   # MTAU
+        23     9.11870000E+01   # MZ
+        24     8.04200000E+01   # MW
+        25     6.20843422E+01   # lightest neutral scalar
+        35     1.22637171E+02   # second neutral scalar
+        45     2.56376886E+03   # third neutral scalar
+        36     8.24419312E+00   # lightest pseudoscalar
+        46     2.56387977E+03   # second pseudoscalar
+        37     2.56222070E+03   # charged Higgs
+   1000001     1.02689763E+03   #  ~d_L
+   2000001     1.02562566E+03   #  ~d_R
+   1000002     1.02406775E+03   #  ~u_L
+   2000002     1.02477320E+03   #  ~u_R
+   1000003     1.02689763E+03   #  ~s_L
+   2000003     1.02562566E+03   #  ~s_R
+   1000004     1.02406775E+03   #  ~c_L
+   2000004     1.02477320E+03   #  ~c_R
+   1000005     1.02151282E+03   #  ~b_1
+   2000005     1.01746732E+03   #  ~b_2
+   1000006     9.18044020E+02   #  ~t_1
+   2000006     1.10427298E+03   #  ~t_2
+   1000011     1.50067972E+03   #  ~e_L
+   2000011     1.50058584E+03   #  ~e_R
+   1000012     1.49873364E+03   #  ~nue_L
+   1000013     1.50067972E+03   #  ~mu_L
+   2000013     1.50058584E+03   #  ~mu_R
+   1000014     1.49873364E+03   #  ~numu_L
+   1000015     1.50000738E+03   #  ~tau_1
+   2000015     1.50126003E+03   #  ~tau_2
+   1000016     1.49873364E+03   #  ~nutau_L
+   1000021     8.43728063E+02   #  ~g
+   1000022     3.50542797E+00   # neutralino(1)
+   1000023     1.21751909E+02   # neutralino(2)
+   1000025     2.41305162E+02   # neutralino(3)
+   1000035    -3.95290085E+02   # neutralino(4)
+   1000045     4.16194539E+02   # neutralino(5)
+   1000024     2.37871956E+02   # chargino(1)
+   1000037     4.10653487E+02   # chargino(2)
+   1000039     5.77350269E+02   # gravitino
+# 
+BLOCK TRILEP
+#   3.35196877E-03[pb]    Higgsino Xsect*BR into trileptons
+#   2.61577812E-02[pb]    Upper limit from CMS, 1801.03957, Fig. 7 & 8a
+# 
+BLOCK DMASS
+# Mass uncertainties from QSTSB -> QSTSB*4 or QSTSB/4: 
+                  17.54   # DM(lightest neutral scalar)
+                   2.05   # DM(second neutral scalar)
+                  42.75   # DM(third neutral scalar)
+                  25.35   # DM(lightest pseudoscalar)
+                  42.75   # DM(second pseudoscalar)
+                  42.79   # DM(charged Higgs)
+# If 300000.00: Delta(QSTSB) generates Msquark^2 < 0 or Mhiggs^2 < 0
+# For Higgs mass precision = 0:
+#  2-loop correction assumes degenerate Stops and Sbottoms
+#  if not true, uncertainties are potentially underestimated
+# 
+# Low energy observables
+BLOCK LOWEN
+# Exp. 2 Sigma: 3.02E-4 < BR(b -> s gamma) < 3.62E-4:
+     1     3.60763709E-04   # BR(b -> s gamma)
+    11     4.09580286E-04   # (BR(b -> s gamma)+Theor.Err.)
+    12     3.11947133E-04   # (BR(b -> s gamma)-Theor.Err.)
+# Exp. 2 Sigma: 5.027E-1 < Delta M_d < 5.103E-1:
+     2     5.11836210E-01   # Delta M_d in ps^-1
+    21     9.92054738E-01   # Delta M_d +Theor.Err.
+    22     1.44667006E-01   # Delta M_d -Theor.Err.
+# Exp. 2 Sigma: 1.7715E+1 < Delta Ms < 1.7799E+1:
+     3     1.80605561E+01   # Delta M_s in ps^-1
+    31     2.23878648E+01   # Delta M_s +Theor.Err.
+    32     1.41924227E+01   # Delta M_s -Theor.Err.
+# Exp. 2 Sigma: 1.7E-9 < BR(Bs->mu+mu-) < 4.5E-9:
+     4     3.24892760E-09   # BR(Bs -> mu+mu-)
+    41     4.07979847E-09   # BR(Bs -> mu+mu-)+Theor.Err.
+    42     2.67214296E-09   # BR(Bs -> mu+mu-)-Theor.Err.
+# Exp. 2 Sigma: 0.78E-4 < BR(B+ > tau+ + nu_tau) < 1.44E-4:
+     5     1.06963309E-04   # BR(B+ -> tau+ + nu_tau)
+    51     1.63046856E-04   # BR(B+ -> tau+ + nu_tau) + Theor.Err.
+    52     6.57870270E-05   # BR(B+ -> tau+ + nu_tau) - Theor.Err.
+# Exp. 2 Sigma: 0.84E-6 < BR(B->Xs mu+mu-)low < 2.32E-6:
+#   1.64652065E-06   BR(B->Xs mu+mu-)low
+#   1.83896183E-06   BR(B->Xs mu+mu-)low+Theor.Err.
+#   1.45407947E-06   BR(B->Xs mu+mu-)low-Theor.Err.
+# Exp. 2 Sigma: 2.8E-7 < BR(B->Xs mu+mu-)high < 6.8E-7:
+#   2.35732456E-07   BR(B->Xs mu+mu-)high
+#   3.76200698E-07   BR(B->Xs mu+mu-)high+Theor.Err.
+#   9.52642147E-08   BR(B->Xs mu+mu-)high-Theor.Err.
+# Exp. 2 Sigma: 2.7E-6 < BR(b -> d gamma) < 2.55E-5:
+#   1.85005700E-05   BR(b -> d gamma)
+#   2.10266608E-05   BR(b -> d gamma)+Theor.Err.)
+#   1.39744791E-05   BR(b -> d gamma)-Theor.Err.)
+# Exp. 2 Sigma: 1.1E-10 < BR(Bd->mu+mu-) < 7.1E-10:
+#   9.91667603E-11   BR(Bd -> mu+mu-)
+#   1.73064050E-10   BR(Bd -> mu+mu-)+Theor.Err.
+#   3.19811047E-11   BR(Bd -> mu+mu-)-Theor.Err.
+# Exp. 2 Sigma: BR(B-> Xs nu nubar) < 6.4E-4:
+#   2.85608760E-05   BR(B-> Xs nu nubar)
+#   3.46061350E-05   BR(B-> Xs nu nubar)+Theor.Err.
+#   2.25156171E-05   BR(B-> Xs nu nubar)-Theor.Err.
+# Exp. 2 Sigma: BR(B+-> K+ nu nubar) < 1.6E-5:
+#   3.91973402E-06   BR(B+-> K+ nu nubar)
+#   4.86594542E-06   BR(B+-> K+ nu nubar)+Theor.Err.
+#   2.97352262E-06   BR(B+-> K+ nu nubar)-Theor.Err.
+# Exp. 2 Sigma: BR(B-> Ks nu nubar) < 5.5E-5:
+#   9.05084313E-06   BR(B-> Ks nu nubar)
+#   1.10451855E-05   BR(B-> Ks nu nubar)+Theor.Err.
+#   7.05650072E-06   BR(B-> Ks nu nubar)-Theor.Err.
+# RD = BR[B+ -> D tau+ nu_tau]/BR[B+ -> D l+ nu_l]
+# Exp. 2 Sigma: 3.15E-1 < RD < 4.99E-1:
+#   2.96976504E-01   RD
+#   3.30983629E-01   RD+Theor.Err.
+#   2.62969378E-01   RD-Theor.Err.
+# RD* = BR[B+ -> D* tau+ nu_tau]/BR[B+ -> D* l+ nu_l]
+# Exp. 2 Sigma: 2.74E-1 < RD* < 3.34E-1:
+#   2.51998388E-01   RD*
+#   2.57998958E-01   RD*+Theor.Err.
+#   2.45984560E-01   RD*-Theor.Err.
+# Exp. 2 Sigma: BR(K+-> Pi+ nu nubar) < 4.03E-10:
+#   8.53462707E-11   BR(K+-> Pi+ nu nubar)
+#   1.05575285E-10   BR(K+-> Pi+ nu nubar)+Theor.Err.
+#   6.51172560E-11   BR(K+-> Pi+ nu nubar)-Theor.Err.
+# Exp. 2 Sigma: BR(KL-> Pi0 nu nubar) < 2.6E-8:
+#   2.66891749E-11   BR(KL-> Pi0 nu nubar)
+#   3.87900334E-11   BR(KL-> Pi0 nu nubar)+Theor.Err.
+#   1.45883164E-11   BR(KL-> Pi0 nu nubar)-Theor.Err.
+# Exp. 2 Sigma: 5.275E-3 < DMK < 5.311E-3:
+#   5.80191603E-03   DMK in ps-1
+#   9.79539592E-03   DMK+Theor.Err.
+#   1.80849986E-03   DMK-Theor.Err.
+# Exp. 2 Sigma: 2.206E-3 < epsK < 2.250E-3:
+#   1.87404957E-03   epsK
+#   2.43329048E-03   epsK+Theor.Err.
+#   1.32853812E-03   epsK-Theor.Err.
+# 
+# BSM contr. to the muon anomalous magn. moment:
+     6     9.25559063E-11   # Del_a_mu
+    61     3.76121676E-10   # Del_a_mu + Theor.Err.
+    62    -1.91009863E-10   # Del_a_mu - Theor.Err.
+# Minimal Exp.-SM (2 sigma):  8.77297457E-10
+# Maximal Exp.-SM (2 sigma):  4.61143538E-09
+# 
+# Omega h^2 (allowed: 0.10683 < Omega h^2 < 0.13057):
+    10     1.03228354E-01   # Omega h^2
+# Channels which contribute to 1/(omega) more than 0.1%.
+# Relative contributions in % are displayed
+  87.2% ~o1 ~o1 ->l L
+  12.3% ~o1 ~o1 ->G G
+   0.2% ~o1 ~o1 ->d D
+   0.2% ~o1 ~o1 ->s S
+# sigma(p)_SI (all values allowed)
+    20     5.62064842E-11   # sigma_p^SI
+# sigma(n)_SD (allowed: sigma_n^SD <   7.45041643E+01):
+    30     5.12346628E-05   # sigma_n^SD
+# sigma(p)_SD (all values allowed)&
+    40     6.70622001E-05   # sigma_p^SD
+# values used for sigma_piN,sigma_S (strange content of the proton)
+    50     3.40000000E+01   # sigma_piN
+    60     4.20000000E+01   # sigma_S
+# 
+BLOCK HMIX Q=  1.00000000E+03 # (STOP/SBOTTOM MASSES)
+     1     3.73538000E+02   # MUEFF
+     2     6.83961590E+00   # TAN(BETA)
+     3     2.42221254E+02   # V(Q)
+     4     6.73060004E+06   # MA^2
+     5     7.45219554E+03   # MP^2
+# 
+# 3*3 Higgs mixing
+BLOCK NMHMIX
+  1  1     7.02626191E-03   # S_(1,1)
+  1  2    -1.70003396E-01   # S_(1,2)
+  1  3     9.85418427E-01   # S_(1,3)
+  2  1     1.47560427E-01   # S_(2,1)
+  2  2     9.74830885E-01   # S_(2,2)
+  2  3     1.67124704E-01   # S_(2,3)
+  3  1     9.89028085E-01   # S_(3,1)
+  3  2    -1.44234502E-01   # S_(3,2)
+  3  3    -3.19351909E-02   # S_(3,3)
+# 
+# 3*3 Pseudoscalar Higgs mixing
+BLOCK NMAMIX
+  1  1    -3.30650610E-02   # P_(1,1)
+  1  2    -4.81445645E-03   # P_(1,2)
+  1  3     9.99441605E-01   # P_(1,3)
+  2  1     9.89012576E-01   # P_(2,1)
+  2  2     1.44005722E-01   # P_(2,2)
+  2  3     3.34137285E-02   # P_(2,3)
+# 
+# 3rd generation sfermion mixing
+BLOCK STOPMIX  # Stop mixing matrix
+  1  1    -7.08307444E-01   # Rst_(1,1)
+  1  2     7.05904076E-01   # Rst_(1,2)
+  2  1    -7.05904076E-01   # Rst_(2,1)
+  2  2    -7.08307444E-01   # Rst_(2,2)
+BLOCK SBOTMIX  # Sbottom mixing matrix
+  1  1     5.16143319E-01   # Rsb_(1,1)
+  1  2     8.56502233E-01   # Rsb_(1,2)
+  2  1    -8.56502233E-01   # Rsb_(2,1)
+  2  2     5.16143319E-01   # Rsb_(2,2)
+BLOCK STAUMIX  # Stau mixing matrix
+  1  1     6.80095638E-01   # Rsl_(1,1)
+  1  2     7.33123403E-01   # Rsl_(1,2)
+  2  1    -7.33123403E-01   # Rsl_(2,1)
+  2  2     6.80095638E-01   # Rsl_(2,2)
+# 
+# Gaugino-Higgsino mixing
+BLOCK NMNMIX  # 5*5 Neutralino Mixing Matrix
+  1  1     7.85080733E-02   # N_(1,1)
+  1  2    -6.83283828E-02   # N_(1,2)
+  1  3    -6.84067808E-03   # N_(1,3)
+  1  4    -2.23942710E-01   # N_(1,4)
+  1  5     9.69004944E-01   # N_(1,5)
+  2  1     9.85553597E-01   # N_(2,1)
+  2  2    -3.32182018E-02   # N_(2,2)
+  2  3     1.33577109E-01   # N_(2,3)
+  2  4    -3.95793135E-02   # N_(2,4)
+  2  5    -9.03952051E-02   # N_(2,5)
+  3  1     9.14536318E-02   # N_(3,1)
+  3  2     9.15719944E-01   # N_(3,2)
+  3  3    -3.16872013E-01   # N_(3,3)
+  3  4     2.05425557E-01   # N_(3,4)
+  3  5     1.02399633E-01   # N_(3,5)
+  4  1    -4.82833763E-02   # N_(4,1)
+  4  2     7.12819581E-02   # N_(4,2)
+  4  3     6.96234673E-01   # N_(4,3)
+  4  4     6.91167642E-01   # N_(4,4)
+  4  5     1.73586202E-01   # N_(4,5)
+  5  1    -1.08745296E-01   # N_(5,1)
+  5  2     3.88076860E-01   # N_(5,2)
+  5  3     6.30047434E-01   # N_(5,3)
+  5  4    -6.54500399E-01   # N_(5,4)
+  5  5    -1.10635755E-01   # N_(5,5)
+# 
+BLOCK UMIX  # Chargino U Mixing Matrix
+  1  1     8.79690590E-01   # U_(1,1)
+  1  2    -4.75546491E-01   # U_(1,2)
+  2  1     4.75546491E-01   # U_(2,1)
+  2  2     8.79690590E-01   # U_(2,2)
+# 
+BLOCK VMIX  # Chargino V Mixing Matrix
+  1  1     9.40476760E-01   # V_(1,1)
+  1  2    -3.39858005E-01   # V_(1,2)
+  2  1     3.39858005E-01   # V_(2,1)
+  2  2     9.40476760E-01   # V_(2,2)
+# 
+# Higgs reduced couplings
+# (as compared to a SM Higgs with same mass)
+# Intervals allowed for the most SM-like state
+# in the 125.1+/-3 GeV window, from LHC:
+# 0.900 < CV < 1.000 
+# 0.941 < CU < 1.323 
+# 0.607 < CB < 0.915 
+# 0.833 < CJ < 1.050 
+# 0.858 < CG < 1.020 
+# 0.772 < CL < 0.970 
+BLOCK REDCOUP
+# H1
+  1  1    -1.71796064E-01   # U-type fermions
+  1  2     4.87643019E-02   # D-type fermions
+  1  3     4.89273012E-02   # b-quarks
+  1  4     4.87500706E-02   # taus
+  1  5    -1.67217048E-01   # W,Z bosons
+  1  6     1.88015401E-01   # Gluons
+  1  7     2.17661875E-01   # Photons
+# H2
+  2  1     9.85110370E-01   # U-type fermions
+  2  2     1.02411229E+00   # D-type fermions
+  2  3     1.02409055E+00   # b-quarks
+  2  4     1.02411419E+00   # taus
+  2  5     9.85920082E-01   # W,Z bosons
+  2  6     9.84250802E-01   # Gluons
+  2  7     9.86433566E-01   # Photons
+# H3
+  3  1    -1.45755439E-01   # U-type fermions
+  3  2     6.86414266E+00   # D-type fermions
+  3  3     6.64690903E+00   # b-quarks
+  3  4     6.88310899E+00   # taus
+  3  5    -2.24158326E-04   # W,Z bosons
+  3  6     1.33778520E-01   # Gluons
+  3  7     4.87736201E-02   # Photons
+# A1
+  4  1    -4.86522437E-03   # U-type fermions
+  4  2    -2.29481143E-01   # D-type fermions
+  4  3    -2.29316852E-01   # b-quarks
+  4  4    -2.29495487E-01   # taus
+  4  5     0.00000000E+00   # W,Z bosons
+  4  6     2.15143429E-01   # Gluons
+  4  7     9.04216821E-02   # Photons
+# A2
+  5  1     1.45524246E-01   # U-type fermions
+  5  2     6.86403502E+00   # D-type fermions
+  5  3     6.64680139E+00   # b-quarks
+  5  4     6.88300135E+00   # taus
+  5  5     0.00000000E+00   # W,Z bosons
+  5  6     1.73538334E-01   # Gluons
+  5  7     5.20203564E-02   # Photons
+#
+Block HiggsCouplingsBosons
+   -0.167217         3    25    24    24 # Higgs(1)-W-W reduced coupling
+    0.985920         3    35    24    24 # Higgs(2)-W-W reduced coupling
+   -0.224158E-03     3    45    24    24 # Higgs(3)-W-W reduced coupling
+     0.00000         3    36    24    24 # CP-odd Higgs(1)-W-W reduced coupling
+     0.00000         3    46    24    24 # CP-odd Higgs(2)-W-W reduced coupling
+   -0.167217         3    25    23    23 # Higgs(1)-Z-Z reduced coupling
+    0.985920         3    35    23    23 # Higgs(2)-Z-Z reduced coupling
+   -0.224158E-03     3    45    23    23 # Higgs(3)-Z-Z reduced coupling
+     0.00000         3    36    23    23 # CP-odd Higgs(1)-Z-Z reduced coupling
+     0.00000         3    46    23    23 # CP-odd Higgs(2)-Z-Z reduced coupling
+    0.188015         3    25    21    21 # Higgs(1)-gluon-gluon reduced coupling
+    0.984251         3    35    21    21 # Higgs(2)-gluon-gluon reduced coupling
+    0.133779         3    45    21    21 # Higgs(3)-gluon-gluon reduced coupling
+    0.215143         3    36    21    21 # CP-odd Higgs(1)-gluon-gluon reduced coupling
+    0.173538         3    46    21    21 # CP-odd Higgs(2)-gluon-gluon reduced coupling
+    0.217662         3    25    22    22 # Higgs(1)-gamma-gamma reduced coupling
+    0.986434         3    35    22    22 # Higgs(2)-gamma-gamma reduced coupling
+    0.487736E-01     3    45    22    22 # Higgs(3)-gamma-gamma reduced coupling
+    0.904217E-01     3    36    22    22 # CP-odd Higgs(1)-gamma-gamma reduced coupling
+    0.520204E-01     3    46    22    22 # CP-odd Higgs(2)-gamma-gamma reduced coupling
+#
+Block HiggsCouplingsFermions
+#     Scalar       Pseudoscalar
+    0.489273E-01     0.00000         3    25     5     5 # Higgs(1)-b-b red. coupling
+     1.02409         0.00000         3    35     5     5 # Higgs(2)-b-b red. coupling
+     6.64691         0.00000         3    45     5     5 # Higgs(3)-b-b red. coupling
+     0.00000       -0.229317         3    36     5     5 # CP-odd Higgs(1)-b-b red. coupling
+     0.00000         6.64680         3    46     5     5 # CP-odd Higgs(2)-b-b red. coupling
+   -0.171796         0.00000         3    25     6     6 # Higgs(1)-top-top red. coupling
+    0.985110         0.00000         3    35     6     6 # Higgs(2)-top-top red. coupling
+   -0.145755         0.00000         3    45     6     6 # Higgs(3)-top-top red. coupling
+     0.00000       -0.486522E-02     3    36     6     6 # CP-odd Higgs(1)-top-top red. coupling
+     0.00000        0.145524         3    46     6     6 # CP-odd Higgs(2)-top-top red. coupling
+    0.487501E-01     0.00000         3    25    15    15 # Higgs(1)-tau-tau red. coupling
+     1.02411         0.00000         3    35    15    15 # Higgs(2)-tau-tau red. coupling
+     6.88311         0.00000         3    45    15    15 # Higgs(3)-tau-tau red. coupling
+     0.00000       -0.229495         3    36    15    15 # CP-odd Higgs(1)-tau-tau red. coupling
+     0.00000         6.88300         3    46    15    15 # CP-odd Higgs(2)-tau-tau red. coupling
+# 
+# GAUGE AND YUKAWA COUPLINGS AT THE SUSY SCALE
+BLOCK GAUGE Q=  1.00000000E+03 # (SUSY SCALE)
+     1     3.62074984E-01   # g1(Q,DR_bar)
+     2     6.43078772E-01   # g2(Q,DR_bar)
+     3     1.06735323E+00   # g3(Q,DR_bar)
+BLOCK YU Q=  1.00000000E+03 # (SUSY SCALE)
+  3  3     8.68635416E-01   # HTOP(Q,DR_bar)
+BLOCK YD Q=  1.00000000E+03 # (SUSY SCALE)
+  3  3     9.50057048E-02   # HBOT(Q,DR_bar)
+BLOCK YE Q=  1.00000000E+03 # (SUSY SCALE)
+  3  3     6.95205904E-02   # HTAU(Q,DR_bar)
+# 
+# SOFT TRILINEAR COUPLINGS AT THE SUSY SCALE
+# (BOTH SLHA1 AND SLHA2 FORMAT)
+BLOCK AU Q=  1.00000000E+03 # (SUSY SCALE)
+  3  3     1.50000000E+03   # ATOP
+BLOCK TU Q=  1.00000000E+03 # (SUSY SCALE)
+  3  3     1.50000000E+03   # ATOP
+BLOCK AD Q=  1.00000000E+03 # (SUSY SCALE)
+  3  3     1.50000000E+03   # ABOT
+BLOCK TD Q=  1.00000000E+03 # (SUSY SCALE)
+  3  3     1.50000000E+03   # ABOT
+BLOCK AE Q=  1.00000000E+03 # (SUSY SCALE)
+  2  2     1.50000000E+03   # AMUON
+  3  3     1.50000000E+03   # ATAU
+BLOCK TE Q=  1.00000000E+03 # (SUSY SCALE)
+  2  2     1.50000000E+03   # AMUON
+  3  3     1.50000000E+03   # ATAU
+# 
+# SOFT MASSES AT THE SUSY SCALE
+BLOCK MSOFT Q=  1.00000000E+03 # (SUSY SCALE)
+     1     1.24200500E+02   # M1
+     2     2.48401000E+02   # M2
+     3     7.45203000E+02   # M3
+    21     6.44766448E+06   # M_HD^2
+    22     2.22361679E+04   # M_HU^2
+    31     1.50000000E+03   # M_eL
+    32     1.50000000E+03   # M_muL
+    33     1.50000000E+03   # M_tauL
+    34     1.50000000E+03   # M_eR
+    35     1.50000000E+03   # M_muR
+    36     1.50000000E+03   # M_tauR
+    41     1.00000000E+03   # M_q1L
+    42     1.00000000E+03   # M_q2L
+    43     1.00000000E+03   # M_q3L
+    44     1.00000000E+03   # M_uR
+    45     1.00000000E+03   # M_cR
+    46     1.00000000E+03   # M_tR
+    47     1.00000000E+03   # M_dR
+    48     1.00000000E+03   # M_sR
+    49     1.00000000E+03   # M_bR
+# 
+# NMSSM SPECIFIC PARAMETERS THE SUSY SCALE
+BLOCK NMSSMRUN Q=  1.00000000E+03 # (SUSY SCALE)
+     1     4.99793000E-01   # LAMBDA(Q,DR_bar)
+     2     0.00000000E+00   # KAPPA(Q,DR_bar)
+     3     2.59611000E+03   # ALAMBDA
+     4     0.00000000E+00   # AKAPPA
+     5     3.73538000E+02   # MUEFF
+     6    -1.25654928E+04   # XIF
+     7    -1.20996303E+05   # XIS
+     8     0.00000000E+00   # MUP
+     9     0.00000000E+00   # MSP
+    10     1.25100642E+02   # MS^2
+#   12     0.00000000E+00   # M3H
+# 
+BLOCK MSQ2  # Soft l.h. squark masses squared
+  1  1     1.00000000E+06   # M_q1L
+  2  2     1.00000000E+06   # M_q2L
+  3  3     1.00000000E+06   # M_q3L
+# 
+BLOCK MSU2  # Soft r.h. up-squark masses squared
+  1  1     1.00000000E+06   # M_uR
+  2  2     1.00000000E+06   # M_cR
+  3  3     1.00000000E+06   # M_tR
+# 
+BLOCK MSD2  # Soft r.h. down-squark masses squared
+  1  1     1.00000000E+06   # M_dR
+  2  2     1.00000000E+06   # M_sR
+  3  3     1.00000000E+06   # M_bR
+# 
+BLOCK MSL2  # Soft l.h. slepton masses squared
+  1  1     2.25000000E+06   # M_eL
+  2  2     2.25000000E+06   # M_muL
+  3  3     2.25000000E+06   # M_tauL
+# 
+BLOCK MSE2  # Soft r.h. slepton masses squared
+  1  1     2.25000000E+06   # M_eR
+  2  2     2.25000000E+06   # M_muR
+  3  3     2.25000000E+06   # M_tauR
+# 
+BLOCK USQMIX  # Elements of 6x6 up-squark matrix
+  1  1     1.00000000E+00   # R_u_11
+  2  2     1.00000000E+00   # R_u_22
+  3  3    -7.08307444E-01   # R_u_33
+  3  6     7.05904076E-01   # R_u_36
+  4  4     1.00000000E+00   # R_u_44
+  5  5     1.00000000E+00   # R_u_55
+  6  6    -7.08307444E-01   # R_u_66
+  6  3    -7.05904076E-01   # R_u_63
+# 
+BLOCK DSQMIX  # Elements of 6x6 down-squark matrix
+  1  1     1.00000000E+00   # R_d_11
+  2  2     1.00000000E+00   # R_d_22
+  3  3     5.16143319E-01   # R_d_33
+  3  6     8.56502233E-01   # R_u_36
+  4  4     1.00000000E+00   # R_d_44
+  5  5     1.00000000E+00   # R_d_55
+  6  6     5.16143319E-01   # R_d_66
+  6  3    -8.56502233E-01   # R_u36
+# 
+BLOCK SELMIX  # Elements of 6x6 ch. slepton matrix
+  1  1     1.00000000E+00   # R_e_11
+  2  2     1.00000000E+00   # R_e_22
+  3  3     6.80095638E-01   # R_e_33
+  3  6     7.33123403E-01   # R_e_36
+  4  4     1.00000000E+00   # R_e_44
+  5  5     1.00000000E+00   # R_e_55
+  6  6     6.80095638E-01   # R_e_66
+  6  3    -7.33123403E-01   # R_e_63
+# 
+# GAUGE AND YUKAWA COUPLINGS AT THE GUT SCALE
+BLOCK GUTGAUGE Q=  2.42263573E+16 # (GUT SCALE)
+     1     7.13587080E-01   # g1(MGUT,DR_bar), GUT normalization
+     2     7.13587079E-01   # g2(MGUT,DR_bar)
+     3     7.04209585E-01   # g3(MGUT,DR_bar)
+BLOCK GUTYU Q=  2.42263573E+16 # (GUT SCALE)
+  3  3     5.70064265E-01   # HTOP(MGUT,DR_bar)
+BLOCK GUTYD Q=  2.42263573E+16 # (GUT SCALE)
+  3  3     3.91321021E-02   # HBOT(MGUT,DR_bar)
+BLOCK GUTYE Q=  2.42263573E+16 # (GUT SCALE)
+  3  3     5.11096765E-02   # HTAU(MGUT,DR_bar)
+# 
+# SOFT TRILINEAR COUPLINGS AT THE GUT SCALE
+BLOCK GUTAU Q=  2.42263573E+16 # (GUT SCALE)
+  3  3     7.63987432E+03   # ATOP
+BLOCK GUTAD Q=  2.42263573E+16 # (GUT SCALE)
+  3  3     3.83737218E+03   # ABOT
+BLOCK GUTAE Q=  2.42263573E+16 # (GUT SCALE)
+  2  2     2.33586553E+03   # AMUON
+  3  3     2.35416953E+03   # ATAU
+# 
+# SOFT MASSES SQUARED AT THE GUT SCALE
+BLOCK GUTMSOFT Q=  2.42263573E+16 # (GUT SCALE)
+     1     3.14793108E+02   # M1
+     2     3.40698342E+02   # M2
+     3     3.42200511E+02   # M3
+    21     1.28694143E+07   # M_HD^2
+    22     2.37863147E+07   # M_HU^2
+    31     1.61676225E+03   # M_eL
+    32     1.61676225E+03   # M_muL
+    33     1.62371532E+03   # M_tauL
+    34     1.21981652E+03   # M_eR
+    35     1.21981652E+03   # M_muR
+    36     1.23823686E+03   # M_tauR
+    41     6.92719671E+02   # M_q1L
+    42     6.92719671E+02   # M_q2L
+    43     2.50203849E+03   # M_q3L
+    44     1.06117587E+03   # M_uR
+    45     1.06117587E+03   # M_cR
+    46     3.58037612E+03   # M_tR
+    47     6.02945923E+02   # M_dR
+    48     6.02945923E+02   # M_sR
+    49     6.41800447E+02   # M_bR
+# 
+# NMSSM SPECIFIC PARAMETERS AT THE GUT SCALE
+BLOCK GUTNMSSMRUN Q=  2.42263573E+16 # (GUT SCALE)
+     1     6.49398302E-01   # LAMBDA(MGUT,DR_bar)
+     2     0.00000000E+00   # KAPPA(MGUT,DR_bar)
+     3     7.60153336E+03   # ALAMBDA
+     4     3.79017792E+03   # AKAPPA
+     6    -1.43388614E+04   # XIF
+     7    -1.82536845E+07   # XIS
+     8     0.00000000E+00   # MUP
+     9     0.00000000E+00   # MSP
+    10     1.21350515E+07   # MS^2
+    12     0.00000000E+00   # M3H
+# 
+# FINE-TUNING parameter d(ln Mz^2)/d(ln PG^2)
+# BLOCK FINETUNING
+     1     3.49254300E+00   # PS=MHU
+     2     1.72269239E+01   # PS=MHD
+     3    -7.55565809E-02   # PS=MS
+     4    -1.77036871E+01   # PS=ALAMBDA
+     5    -0.00000000E+00   # PS=AKAPPA
+     6     2.58863163E-01   # PS=XIF
+     7     1.46666692E-01   # PS=XIS
+     8    -0.00000000E+00   # PS=MUP
+     9    -0.00000000E+00   # PS=MSP
+    10    -0.00000000E+00   # PS=M3H
+    11    -3.48392368E-03   # PS=LAMBDA
+    12     0.00000000E+00   # PS=KAPPA
+    13     7.76475984E-01   # PS=HTOP
+    14    -3.84754068E-01   # PS=G
+    15     1.77036871E+01   # MAX
+    16                  4   # IMAX
+# 
+# REDUCED CROSS SECTIONS AT LHC
+BLOCK LHCCROSSSECTIONS
+    11     1.83921251E-03   # VBF/VH -> H1 -> tautau
+    12     2.32518578E-03   # ggF -> H1 -> tautau
+    13     1.83852558E-03   # VBF/VH -> H1 -> bb
+    14     1.94059536E-03   # ttH -> H1 -> bb
+    15     2.16392657E-02   # VBF/VH -> H1 -> ZZ/WW
+    16     2.73569870E-02   # ggF -> H1 -> ZZ/WW
+    17     3.66666583E-02   # VBF/VH -> H1 -> gammagamma
+    18     4.63550524E-02   # ggF -> H1 -> gammagamma
+    21     9.16311421E-01   # VBF/VH -> H2 -> tautau
+    22     9.13211199E-01   # ggF -> H2 -> tautau
+    23     9.15286489E-01   # VBF/VH -> H2 -> bb
+    24     9.13783701E-01   # ttH -> H2 -> bb
+    25     8.49238659E-01   # VBF/VH -> H2 -> ZZ/WW
+    26     8.46365369E-01   # ggF -> H2 -> ZZ/WW
+    27     8.50172770E-01   # VBF/VH -> H2 -> gammagamma
+    28     8.47296319E-01   # ggF -> H2 -> gammagamma
+    31     2.96472530E-04   # VBF/VH -> H3 -> tautau
+    32     1.05596004E+02   # ggF -> H3 -> tautau
+    33     2.16806867E-04   # VBF/VH -> H3 -> bb
+    34     9.16669588E+01   # ttH -> H3 -> bb
+    35     3.14430682E-13   # VBF/VH -> H3 -> ZZ/WW
+    36     1.11992243E-07   # ggF -> H3 -> ZZ/WW
+    37     1.48870967E-08   # VBF/VH -> H3 -> gammagamma
+    38     5.30240669E-03   # ggF -> H3 -> gammagamma
+    42     1.86873312E-02   # ggF -> A1 -> tautau
+    44     0.00000000E+00   # ttH -> A1 -> bb
+    46     3.68287164E+04   # ggF -> A1 -> ZZ/WW
+    48     2.40177695E-02   # ggF -> A1 -> gammagamma
+    52     1.77328361E+02   # ggF -> A2 -> tautau
+    54     9.12529642E+01   # ttH -> A2 -> bb
+    56     1.86925364E-04   # ggF -> A2 -> ZZ/WW
+    58     1.01296202E-02   # ggF -> A2 -> gammagamma
+# 
+# CHI^2 FOR HIGGS COUPLINGS
+BLOCK LHCFIT
+     1     2.69998366E+00   # Hgammagamma
+     2     5.72111619E-01   # Hff
+     3     5.99493833E+00   # HVV
+# 
+# PARAMETERS OF THE EFFECTIVE LAGRANGIAN IN THE HIGGS SECTOR
+BLOCK  EFFECTIVE_COUPLINGS
+ X -0.12062111E+06
+ A1  0.00000000E+00
+ A2  0.00000000E+00
+ A3  0.00000000E+00
+ A4  0.00000000E+00
+ A5  0.12569102E+04
+ A6 -0.19625102E+01
+ B1 -0.61018915E+04
+ B2  0.00000000E+00
+ L1  0.12590618E+00
+ L2  0.24258960E+00
+ L3  0.65567851E-01
+ L4  0.37694308E-01
+ L5 -0.54509834E-03
+ L6  0.37754084E-03
+ L7  0.31235778E-02
+ K1  0.24784716E+00
+ K2  0.24581209E+00
+ K3  0.15371823E-02
+ K4  0.00000000E+00
+ K5  0.00000000E+00
+ K6  0.00000000E+00
+ K7  0.00000000E+00
+ K8  0.00000000E+00
+ XVEV  0.74971019E+03
+ DELMB  0.31946202E-01
+ DELML -0.26955433E-02
+ X(1)  0.10072842E+01
+ X(2)  0.99995383E+00
+# 
+# Allowed BSM branching ratio for the most SM-like
+# Higgs state in the 125.1+/-3 GeV window (LHC):
+# BR_BSM < 0.194 
+# 
+# HIGGS + TOP BRANCHING RATIOS IN SLHA FORMAT
+# Info about decay package
+BLOCK DCINFO   # Program information
+     1   NMSSMTools # Decay package
+     2   5.4.1      # Version number
+#           PDG          Width
+DECAY        25     5.71304636E-05   # Lightest neutral Higgs scalar
+     2.00701612E-02    2          21        21   # BR(H_1 -> hadrons)
+     4.42866729E-10    2          11       -11   # BR(H_1 -> e- e+)
+     1.89336068E-05    2          13       -13   # BR(H_1 -> muon muon)
+     5.32618389E-03    2          15       -15   # BR(H_1 -> tau tau)
+     2.69531974E-02    2           4        -4   # BR(H_1 -> c cbar)
+     5.68449806E-02    2           5        -5   # BR(H_1 -> b bbar)
+     7.00880708E-05    2          24       -24   # BR(H_1 -> W+ W-)
+     2.12731037E-05    2          23        23   # BR(H_1 -> Z Z)
+     6.92790674E-04    2          22        22   # BR(H_1 -> gamma gamma)
+     8.08488455E-01    2          36        36   # BR(H_1 -> A_1 A_1)
+     8.15139356E-02    2     1000022   1000022   # BR(H_1 -> neu_1 neu_1)
+DECAY        35     4.10330111E-03   # 2nd neutral Higgs scalar
+     5.01084430E-02    2          21        21   # BR(H_2 -> hadrons)
+     5.37203201E-09    2          11       -11   # BR(H_2 -> e- e+)
+     2.29670124E-04    2          13       -13   # BR(H_2 -> muon muon)
+     6.48825261E-02    2          15       -15   # BR(H_2 -> tau tau)
+     2.62338396E-02    2           4        -4   # BR(H_2 -> c cbar)
+     6.06061037E-01    2           5        -5   # BR(H_2 -> b bbar)
+     1.52859319E-01    2          24       -24   # BR(H_2 -> W+ W-)
+     1.83750231E-02    2          23        23   # BR(H_2 -> Z Z)
+     2.03789898E-03    2          22        22   # BR(H_2 -> gamma gamma)
+     1.22915830E-03    2          23        22   # BR(H_2 -> Z gamma)
+     1.57740680E-03    2          36        36   # BR(H_2 -> A_1 A_1)
+     4.08257977E-07    2          23        36   # BR(H_2 -> A_1 Z)
+     7.64052640E-02    2     1000022   1000022   # BR(H_2 -> neu_1 neu_1)
+DECAY        45     6.59264526E+01   # 3rd neutral Higgs scalar
+     3.09520124E-05    2          21        21   # BR(H_3 -> hadrons)
+     3.14012155E-10    2          11       -11   # BR(H_3 -> e- e+)
+     1.34250002E-05    2          13       -13   # BR(H_3 -> muon muon)
+     3.81835916E-03    2          15       -15   # BR(H_3 -> tau tau)
+     2.63962412E-06    2           4        -4   # BR(H_3 -> c cbar)
+     2.03208024E-02    2           5        -5   # BR(H_3 -> b bbar)
+     3.61778020E-02    2           6        -6   # BR(H_3 -> t tbar)
+     4.12008475E-06    2          24       -24   # BR(H_3 -> W+ W-)
+     2.05456489E-06    2          23        23   # BR(H_3 -> Z Z)
+     2.62019575E-07    2          22        22   # BR(H_3 -> gamma gamma)
+     1.12159909E-06    2          23        22   # BR(H_3 -> Z gamma)
+     6.10203989E-03    2          25        25   # BR(H_3 -> H_1 H_1)
+     7.95832818E-02    2          25        35   # BR(H_3 -> H_1 H_2)
+     4.96764488E-03    2          35        35   # BR(H_3 -> H_2 H_2)
+     1.87795774E-11    2          36        36   # BR(H_3 -> A_1 A_1)
+     9.31977766E-02    2          23        36   # BR(H_3 -> A_1 Z)
+     1.83169793E-02    2     1000022   1000022   # BR(H_3 -> neu_1 neu_1)
+     3.56606516E-04    2     1000022   1000023   # BR(H_3 -> neu_1 neu_2)
+     9.08065967E-03    2     1000022   1000025   # BR(H_3 -> neu_1 neu_3)
+     6.98707600E-02    2     1000022   1000035   # BR(H_3 -> neu_1 neu_4)
+     6.96098774E-02    2     1000022   1000045   # BR(H_3 -> neu_1 neu_5)
+     1.91500367E-03    2     1000023   1000023   # BR(H_3 -> neu_2 neu_2)
+     1.44606764E-02    2     1000023   1000025   # BR(H_3 -> neu_2 neu_3)
+     2.04730853E-02    2     1000023   1000035   # BR(H_3 -> neu_2 neu_4)
+     1.59670447E-02    2     1000023   1000045   # BR(H_3 -> neu_2 neu_5)
+     2.37896186E-02    2     1000025   1000025   # BR(H_3 -> neu_3 neu_3)
+     4.66806985E-02    2     1000025   1000035   # BR(H_3 -> neu_3 neu_4)
+     3.07765591E-02    2     1000025   1000045   # BR(H_3 -> neu_3 neu_5)
+     7.61460927E-05    2     1000035   1000035   # BR(H_3 -> neu_4 neu_4)
+     5.84166556E-02    2     1000035   1000045   # BR(H_3 -> neu_4 neu_5)
+     4.96374013E-03    2     1000045   1000045   # BR(H_3 -> neu_5 neu_5)
+     5.09120779E-02    2     1000024  -1000024   # BR(H_3 -> cha_1 cha_1bar)
+     1.24108788E-01    2     1000024  -1000037   # BR(H_3 -> cha_1 cha_2bar)
+     1.24108788E-01    2     1000037  -1000024   # BR(H_3 -> cha_2 cha_1bar)
+     1.24906171E-02    2     1000037  -1000037   # BR(H_3 -> cha_2 cha_2bar)
+     9.48266582E-06    2     1000002  -1000002   # BR(H_3 -> ~u_L ~ubar_L)
+     9.48266582E-06    2     1000004  -1000004   # BR(H_3 -> ~c_L ~cbar_L)
+     1.67883301E-06    2     2000002  -2000002   # BR(H_3 -> ~u_R ~ubar_R)
+     1.67883301E-06    2     2000004  -2000004   # BR(H_3 -> ~c_R ~cbar_R)
+     1.38272846E-05    2     1000001  -1000001   # BR(H_3 -> ~d_L ~dbar_L)
+     1.38272846E-05    2     1000003  -1000003   # BR(H_3 -> ~s_L ~sbar_L)
+     4.19089316E-07    2     2000001  -2000001   # BR(H_3 -> ~d_R ~dbar_R)
+     4.19089316E-07    2     2000003  -2000003   # BR(H_3 -> ~s_R ~sbar_R)
+     2.84502355E-02    2     1000006  -1000006   # BR(H_3 -> ~t_1 ~tbar_1)
+     2.63002919E-02    2     2000006  -2000006   # BR(H_3 -> ~t_2 ~tbar_2)
+     1.07919350E-07    2     1000006  -2000006   # BR(H_3 -> ~t_1 ~tbar_2)
+     1.07919350E-07    2     2000006  -1000006   # BR(H_3 -> ~t_2 ~tbar_1)
+     1.67647600E-03    2     1000005  -1000005   # BR(H_3 -> ~b_1 ~bbar_1)
+     2.04259608E-03    2     2000005  -2000005   # BR(H_3 -> ~b_2 ~bbar_2)
+     4.41352622E-04    2     1000005  -2000005   # BR(H_3 -> ~b_1 ~bbar_2)
+     4.41352622E-04    2     2000005  -1000005   # BR(H_3 -> ~b_2 ~bbar_1)
+DECAY        36     4.30470577E-06   # Lightest pseudoscalar
+     2.96335340E-02    2          21        21   # BR(A_1 -> hadrons)
+     1.72843037E-08    2          11       -11   # BR(A_1 -> e- e+)
+     7.38715183E-04    2          13       -13   # BR(A_1 -> muon muon)
+     1.88623595E-01    2          15       -15   # BR(A_1 -> tau tau)
+     1.01511067E-03    2           4        -4   # BR(A_1 -> c cbar)
+     2.99148053E-05    2          22        22   # BR(A_1 -> gamma gamma)
+     7.79959113E-01    2     1000022   1000022   # BR(A_1 -> neu_1 neu_1)
+DECAY        46     6.60678848E+01   # 2nd pseudoscalar
+     4.09569619E-05    2          21        21   # BR(A_2 -> hadrons)
+     3.13343673E-10    2          11       -11   # BR(A_2 -> e- e+)
+     1.33964206E-05    2          13       -13   # BR(A_2 -> muon muon)
+     3.81023813E-03    2          15       -15   # BR(A_2 -> tau tau)
+     4.24052483E-06    2           4        -4   # BR(A_2 -> c cbar)
+     2.02913411E-02    2           5        -5   # BR(A_2 -> b bbar)
+     3.64544411E-02    2           6        -6   # BR(A_2 -> t tbar)
+     2.97467128E-07    2          22        22   # BR(A_2 -> gamma gamma)
+     1.38141163E-06    2          23        22   # BR(A_2 -> Z gamma)
+     3.41468951E-03    2          36        25   # BR(A_2 -> A_1 H_1)
+     9.50644212E-02    2          36        35   # BR(A_2 -> A_1 H_2)
+     8.22383317E-02    2          23        25   # BR(A_2 -> Z H_1)
+     2.55836655E-03    2          23        35   # BR(A_2 -> Z H_2)
+     1.83497480E-02    2     1000022   1000022   # BR(A_2 -> neu_1 neu_1)
+     1.44234811E-04    2     1000022   1000023   # BR(A_2 -> neu_1 neu_2)
+     6.66716927E-03    2     1000022   1000025   # BR(A_2 -> neu_1 neu_3)
+     7.94911627E-02    2     1000022   1000035   # BR(A_2 -> neu_1 neu_4)
+     6.19307286E-02    2     1000022   1000045   # BR(A_2 -> neu_1 neu_5)
+     1.86531191E-03    2     1000023   1000023   # BR(A_2 -> neu_2 neu_2)
+     1.41781569E-02    2     1000023   1000025   # BR(A_2 -> neu_2 neu_3)
+     2.39568570E-02    2     1000023   1000035   # BR(A_2 -> neu_2 neu_4)
+     1.30479949E-02    2     1000023   1000045   # BR(A_2 -> neu_2 neu_5)
+     2.57668715E-02    2     1000025   1000025   # BR(A_2 -> neu_3 neu_3)
+     5.22026602E-02    2     1000025   1000035   # BR(A_2 -> neu_3 neu_4)
+     2.53553091E-02    2     1000025   1000045   # BR(A_2 -> neu_3 neu_5)
+     1.54188434E-02    2     1000035   1000035   # BR(A_2 -> neu_4 neu_4)
+     2.50138319E-03    2     1000035   1000045   # BR(A_2 -> neu_4 neu_5)
+     4.30768936E-02    2     1000045   1000045   # BR(A_2 -> neu_5 neu_5)
+     7.75706775E-02    2     1000024  -1000024   # BR(A_2 -> cha_1 cha_1bar)
+     9.88262201E-02    2     1000024  -1000037   # BR(A_2 -> cha_1 cha_2bar)
+     9.88262201E-02    2     1000037  -1000024   # BR(A_2 -> cha_2 cha_1bar)
+     3.58520394E-02    2     1000037  -1000037   # BR(A_2 -> cha_2 cha_2bar)
+     2.82507956E-02    2     1000006  -2000006   # BR(A_2 -> ~t_1 ~tbar_2)
+     2.82507956E-02    2     2000006  -1000006   # BR(A_2 -> ~t_2 ~tbar_1)
+     2.28891193E-03    2     1000005  -2000005   # BR(A_2 -> ~b_1 ~bbar_2)
+     2.28891193E-03    2     2000005  -1000005   # BR(A_2 -> ~b_2 ~bbar_1)
+DECAY        37     6.54587605E+01   # Charged Higgs
+     1.35274343E-05    2         -13        14   # BR(H+ -> muon nu_muon)
+     3.84703845E-03    2         -15        16   # BR(H+ -> tau nu_tau)
+     1.18585102E-03    2           2        -3   # BR(H+ -> u sbar)
+     1.67163181E-05    2           4        -3   # BR(H+ -> c sbar)
+     6.90363702E-07    2           2        -5   # BR(H+ -> u bbar)
+     3.23836755E-05    2           4        -5   # BR(H+ -> c bbar)
+     5.42715629E-02    2           6        -5   # BR(H+ -> t bbar)
+     8.30048233E-02    2          24        25   # BR(H+ -> W+ H_1)
+     2.58220545E-03    2          24        35   # BR(H+ -> W+ H_2)
+     9.38682576E-02    2          24        36   # BR(H+ -> W+ A_1)
+     2.67794539E-02    2     1000024   1000022   # BR(H+ -> cha_1 neu_1)
+     2.64515437E-02    2     1000024   1000023   # BR(H+ -> cha_1 neu_2)
+     8.48264442E-04    2     1000024   1000025   # BR(H+ -> cha_1 neu_3)
+     1.17744428E-01    2     1000024   1000035   # BR(H+ -> cha_1 neu_4)
+     1.38893524E-01    2     1000024   1000045   # BR(H+ -> cha_1 neu_5)
+     1.47946636E-01    2     1000037   1000022   # BR(H+ -> cha_2 neu_1)
+     1.96438268E-02    2     1000037   1000023   # BR(H+ -> cha_2 neu_2)
+     1.78315845E-01    2     1000037   1000025   # BR(H+ -> cha_2 neu_3)
+     3.94757474E-02    2     1000037   1000035   # BR(H+ -> cha_2 neu_4)
+     4.12227586E-03    2     1000037   1000045   # BR(H+ -> cha_2 neu_5)
+     2.33461062E-05    2     1000002  -1000001   # BR(H+ -> ~u_L ~dbar_L)
+     2.33461062E-05    2     1000004  -1000003   # BR(H+ -> ~c_L ~sbar_L)
+     2.47071812E-03    2     1000006  -1000005   # BR(H+ -> ~t_1 ~bbar_1)
+     2.89230366E-02    2     1000006  -2000005   # BR(H+ -> ~t_1 ~bbar_2)
+     1.63598487E-02    2     2000006  -1000005   # BR(H+ -> ~t_2 ~bbar_1)
+     1.31551026E-02    2     2000006  -2000005   # BR(H+ -> ~t_2 ~bbar_2)
+DECAY         6     1.38969334E+00   # Top Quark
+     1.00000000E+00    2           5        24   # BR(t ->  b    W+)
+#         PDG            Width
+DECAY        24     2.08500000E+00   # W+ (measured)
+     1.16500000E-01    2         -11        12   # BR(W+ -> e+ nu_e)
+     1.16500000E-01    2         -13        14   # BR(W+ -> mu+ nu_mu)
+     1.12000000E-01    2         -15        16   # BR(W+ -> tau+ nu_tau)
+     3.65000000E-01    2           2        -1   # BR(W+ -> u db)
+     3.10000000E-01    2           4        -3   # BR(W+ -> c sb)
+#         PDG            Width
+DECAY        23     2.49520000E+00   # Z (measured)
+     2.00000000E-01    2         -12        12   # BR(Z -> invisible)
+     3.36500000E-02    2         -11        11   # BR(Z -> e+ e-)
+     3.36500000E-02    2         -13        13   # BR(Z -> mu+ mu-)
+     3.37000000E-02    2         -15        15   # BR(Z -> tau+ tau-)
+     1.11000000E-01    2           2        -2   # BR(Z -> u ub)
+     1.58500000E-01    2           1        -1   # BR(Z -> d db)
+     1.58500000E-01    2           3        -3   # BR(Z -> s sb)
+     1.20000000E-01    2           4        -4   # BR(Z -> c cb)
+     1.51000000E-01    2           5        -5   # BR(Z -> b bb)
+#         PDG            Width
+DECAY   1000024     1.53121939E-01   # chargino1
+#                    chargino1 2-body decays
+#          BR         NDA      ID1       ID2
+     9.23909928E-01    2     1000022        24   # BR(~chi_1+ -> ~chi_10  W+)
+     7.60900715E-02    2     1000023        24   # BR(~chi_1+ -> ~chi_20  W+)
+#         PDG            Width
+DECAY   1000037     2.79954269E+00   # chargino2
+#                    chargino2 2-body decays
+#          BR         NDA      ID1       ID2
+     2.10403033E-01    2     1000024        23   # BR(~chi_2+ -> ~chi_1+  Z)
+     2.68923771E-01    2     1000022        24   # BR(~chi_2+ -> ~chi_10  W+)
+     5.45234192E-02    2     1000023        24   # BR(~chi_2+ -> ~chi_20  W+)
+     2.73621724E-01    2     1000025        24   # BR(~chi_2+ -> ~chi_30  W+)
+     1.07589283E-01    2     1000024        25   # BR(~chi_2+ -> ~chi_1+  H1)
+     7.43926280E-02    2     1000024        35   # BR(~chi_2+ -> ~chi_1+  H2)
+     1.05461419E-02    2     1000024        36   # BR(~chi_2+ -> ~chi_1+  A1)
+#         PDG            Width
+DECAY   1000022     0.00000000E+00   # neutralino1
+#         PDG            Width
+DECAY   1000023     1.19426065E-03   # neutralino2
+#                    neutralino2 2-body decays
+#          BR         NDA      ID1       ID2
+     2.10858919E-02    2     1000022        23   # BR(~chi_20 -> ~chi_10   Z )
+     7.83766205E-01    2     1000022        25   # BR(~chi_20 -> ~chi_10   H1 )
+     1.95147903E-01    2     1000022        36   # BR(~chi_20 -> ~chi_10   A1 )
+#         PDG            Width
+DECAY   1000025     1.02882609E-01   # neutralino3
+#                    neutralino3 2-body decays
+#          BR         NDA      ID1       ID2
+     9.85610018E-02    2     1000022        23   # BR(~chi_30 -> ~chi_10   Z )
+     2.73444843E-02    2     1000023        23   # BR(~chi_30 -> ~chi_20   Z )
+     1.26564469E-01    2     1000022        25   # BR(~chi_30 -> ~chi_10   H1 )
+     7.00366261E-01    2     1000022        35   # BR(~chi_30 -> ~chi_10   H2 )
+     2.26436423E-02    2     1000022        36   # BR(~chi_30 -> ~chi_10   A1 )
+     2.35197697E-02    2     1000023        25   # BR(~chi_30 -> ~chi_20   H1 )
+     1.00037171E-03    2     1000023        36   # BR(~chi_30 -> ~chi_20   A1 )
+#         PDG            Width
+DECAY   1000035     2.61675042E+00   # neutralino4
+#                    neutralino4 2-body decays
+#          BR         NDA      ID1       ID2
+     1.71138415E-01    2     1000022        23   # BR(~chi_40 -> ~chi_10   Z )
+     7.23752361E-02    2     1000023        23   # BR(~chi_40 -> ~chi_20   Z )
+     1.34569419E-01    2     1000025        23   # BR(~chi_40 -> ~chi_30   Z )
+     2.16897838E-01    2     1000024       -24   # BR(~chi_40 -> ~chi_1+   W-)
+     2.16897838E-01    2    -1000024        24   # BR(~chi_40 -> ~chi_1-   W+)
+     2.23356819E-02    2     1000022        25   # BR(~chi_40 -> ~chi_10   H1 )
+     1.24968939E-01    2     1000022        35   # BR(~chi_40 -> ~chi_10   H2 )
+     1.27443095E-02    2     1000022        36   # BR(~chi_40 -> ~chi_10   A1 )
+     2.76361205E-03    2     1000023        25   # BR(~chi_40 -> ~chi_20   H1 )
+     1.37428007E-02    2     1000023        35   # BR(~chi_40 -> ~chi_20   H2 )
+     3.47323251E-03    2     1000023        36   # BR(~chi_40 -> ~chi_20   A1 )
+     8.44855657E-04    2     1000025        25   # BR(~chi_40 -> ~chi_30   H1 )
+     1.86203404E-03    2     1000025        35   # BR(~chi_40 -> ~chi_30   H2 )
+     5.38578879E-03    2     1000025        36   # BR(~chi_40 -> ~chi_30   A1 )
+#         PDG            Width
+DECAY   1000045     2.68870928E+00   # neutralino5
+#                    neutralino5 2-body decays
+#          BR         NDA      ID1       ID2
+     1.97939249E-01    2     1000022        23   # BR(~chi_50 -> ~chi_10   Z )
+     2.45867481E-02    2     1000023        23   # BR(~chi_50 -> ~chi_20   Z )
+     1.38961136E-02    2     1000025        23   # BR(~chi_50 -> ~chi_30   Z )
+     2.34719601E-01    2     1000024       -24   # BR(~chi_50 -> ~chi_1+   W-)
+     2.34719601E-01    2    -1000024        24   # BR(~chi_50 -> ~chi_1-   W+)
+     2.12188766E-02    2     1000022        25   # BR(~chi_50 -> ~chi_10   H1 )
+     7.18922500E-02    2     1000022        35   # BR(~chi_50 -> ~chi_10   H2 )
+     5.19353024E-03    2     1000022        36   # BR(~chi_50 -> ~chi_10   A1 )
+     1.31579189E-02    2     1000023        25   # BR(~chi_50 -> ~chi_20   H1 )
+     4.08952843E-02    2     1000023        35   # BR(~chi_50 -> ~chi_20   H2 )
+     1.86867917E-03    2     1000023        36   # BR(~chi_50 -> ~chi_20   A1 )
+     8.71205216E-02    2     1000025        25   # BR(~chi_50 -> ~chi_30   H1 )
+     4.79699819E-02    2     1000025        35   # BR(~chi_50 -> ~chi_30   H2 )
+     4.74413548E-03    2     1000025        36   # BR(~chi_50 -> ~chi_30   A1 )
+     7.75097750E-05    2     1000035        36   # BR(~chi_50 -> ~chi_40   A1 )
+#         PDG            Width
+DECAY   1000021     3.34139928E-02   # gluino
+#                    gluino 2-body decays
+#          BR         NDA      ID1       ID2
+     1.20162035E-03    2     1000022        21   # BR(~g -> ~chi_10 g)
+     1.30305691E-05    2     1000023        21   # BR(~g -> ~chi_20 g)
+     6.02336398E-04    2     1000025        21   # BR(~g -> ~chi_30 g)
+     6.71509292E-03    2     1000035        21   # BR(~g -> ~chi_40 g)
+     4.88258818E-03    2     1000045        21   # BR(~g -> ~chi_50 g)
+#                    gluino 3-body decays
+#           BR         NDA      ID1       ID2       ID3
+     4.71783816E-04    3     1000022         1        -1   # BR(~g -> ~chi_10 d  db)
+     1.16629209E-02    3     1000023         1        -1   # BR(~g -> ~chi_20 d  db)
+     3.93974969E-02    3     1000025         1        -1   # BR(~g -> ~chi_30 d  db)
+     7.02509855E-05    3     1000035         1        -1   # BR(~g -> ~chi_40 d  db)
+     3.37282633E-03    3     1000045         1        -1   # BR(~g -> ~chi_50 d  db)
+     3.90873331E-04    3     1000022         2        -2   # BR(~g -> ~chi_10 u  ub)
+     3.63324141E-02    3     1000023         2        -2   # BR(~g -> ~chi_20 u  ub)
+     4.33929383E-02    3     1000025         2        -2   # BR(~g -> ~chi_30 u  ub)
+     5.47414418E-05    3     1000035         2        -2   # BR(~g -> ~chi_40 u  ub)
+     2.89383268E-03    3     1000045         2        -2   # BR(~g -> ~chi_50 u  ub)
+     4.71783816E-04    3     1000022         3        -3   # BR(~g -> ~chi_10 s  sb)
+     1.16629209E-02    3     1000023         3        -3   # BR(~g -> ~chi_20 s  sb)
+     3.93974969E-02    3     1000025         3        -3   # BR(~g -> ~chi_30 s  sb)
+     7.02509855E-05    3     1000035         3        -3   # BR(~g -> ~chi_40 s  sb)
+     3.37282633E-03    3     1000045         3        -3   # BR(~g -> ~chi_50 s  sb)
+     3.90873331E-04    3     1000022         4        -4   # BR(~g -> ~chi_10 c  cb)
+     3.63324141E-02    3     1000023         4        -4   # BR(~g -> ~chi_20 c  cb)
+     4.33929383E-02    3     1000025         4        -4   # BR(~g -> ~chi_30 c  cb)
+     5.47414418E-05    3     1000035         4        -4   # BR(~g -> ~chi_40 c  cb)
+     2.89383268E-03    3     1000045         4        -4   # BR(~g -> ~chi_50 c  cb)
+     4.96927557E-04    3     1000022         5        -5   # BR(~g -> ~chi_10 b  bb)
+     1.21194401E-02    3     1000023         5        -5   # BR(~g -> ~chi_20 b  bb)
+     4.17171011E-02    3     1000025         5        -5   # BR(~g -> ~chi_30 b  bb)
+     1.19636134E-03    3     1000035         5        -5   # BR(~g -> ~chi_40 b  bb)
+     4.49558782E-03    3     1000045         5        -5   # BR(~g -> ~chi_50 b  bb)
+     1.88360676E-02    3     1000022         6        -6   # BR(~g -> ~chi_10 t  tb)
+     1.74017099E-02    3     1000023         6        -6   # BR(~g -> ~chi_20 t  tb)
+     9.63244584E-03    3     1000025         6        -6   # BR(~g -> ~chi_30 t  tb)
+     1.06214456E-02    3     1000035         6        -6   # BR(~g -> ~chi_40 t  tb)
+     2.04868081E-02    3     1000045         6        -6   # BR(~g -> ~chi_50 t  tb)
+     8.24293439E-02    3     1000024         1        -2   # BR(~g -> ~chi_1+ d  ub)
+     8.24293439E-02    3    -1000024         2        -1   # BR(~g -> ~chi_1- u  db)
+     7.05588138E-03    3     1000037         1        -2   # BR(~g -> ~chi_2+ d  ub)
+     7.05588138E-03    3    -1000037         2        -1   # BR(~g -> ~chi_2- u  db)
+     8.24293439E-02    3     1000024         3        -4   # BR(~g -> ~chi_1+ s  cb)
+     8.24293439E-02    3    -1000024         4        -3   # BR(~g -> ~chi_1- c  sb)
+     7.05588138E-03    3     1000037         3        -4   # BR(~g -> ~chi_2+ s  cb)
+     7.05588138E-03    3    -1000037         4        -3   # BR(~g -> ~chi_2- c  sb)
+     4.09410883E-02    3     1000024         5        -6   # BR(~g -> ~chi_1+ b  tb)
+     4.09410883E-02    3    -1000024         6        -5   # BR(~g -> ~chi_1- t  bb)
+     6.68391007E-02    3     1000037         5        -6   # BR(~g -> ~chi_2+ b  tb)
+     6.68391007E-02    3    -1000037         6        -5   # BR(~g -> ~chi_2- t  bb)
+#         PDG            Width
+DECAY   1000011     1.91842723E+01   # selectron_L
+#                    selectron_L 2-body decays
+#          BR         NDA      ID1       ID2
+     1.87294986E-04    2     1000022        11   # BR(~e_L- -> ~chi_10 e-)
+     8.64263328E-02    2     1000023        11   # BR(~e_L- -> ~chi_20 e-)
+     2.85667312E-01    2     1000025        11   # BR(~e_L- -> ~chi_30 e-)
+     5.41909473E-04    2     1000035        11   # BR(~e_L- -> ~chi_40 e-)
+     2.92920345E-02    2     1000045        11   # BR(~e_L- -> ~chi_50 e-)
+     4.73324200E-01    2    -1000024        12   # BR(~e_L- -> ~chi_1- nu_e)
+     1.24560917E-01    2    -1000037        12   # BR(~e_L- -> ~chi_2- nu_e)
+#         PDG            Width
+DECAY   2000011     7.70815703E+00   # selectron_R
+#                    selectron_R 2-body decays
+#          BR         NDA      ID1       ID2
+     6.25880428E-03    2     1000022        11   # BR(~e_R- -> ~chi_10 e-)
+     9.73399374E-01    2     1000023        11   # BR(~e_R- -> ~chi_20 e-)
+     8.05959171E-03    2     1000025        11   # BR(~e_R- -> ~chi_30 e-)
+     2.05019980E-03    2     1000035        11   # BR(~e_R- -> ~chi_40 e-)
+     1.02320303E-02    2     1000045        11   # BR(~e_R- -> ~chi_50 e-)
+#         PDG            Width
+DECAY   1000013     1.91842723E+01   # smuon_L
+#                    smuon_L 2-body decays
+#          BR         NDA      ID1       ID2
+     1.87294986E-04    2     1000022        13   # BR(~mu_L- -> ~chi_10 mu-)
+     8.64263328E-02    2     1000023        13   # BR(~mu_L- -> ~chi_20 mu-)
+     2.85667312E-01    2     1000025        13   # BR(~mu_L- -> ~chi_30 mu-)
+     5.41909473E-04    2     1000035        13   # BR(~mu_L- -> ~chi_40 mu-)
+     2.92920345E-02    2     1000045        13   # BR(~mu_L- -> ~chi_50 mu-)
+     4.73324200E-01    2    -1000024        14   # BR(~mu_L- -> ~chi_1- nu_mu)
+     1.24560917E-01    2    -1000037        14   # BR(~mu_L- -> ~chi_2- nu_mu)
+#         PDG            Width
+DECAY   2000013     7.70815703E+00   # smuon_R
+#                    smuon_R 2-body decays
+#          BR         NDA      ID1       ID2
+     6.25880428E-03    2     1000022        13   # BR(~mu_R- -> ~chi_10 mu-)
+     9.73399374E-01    2     1000023        13   # BR(~mu_R- -> ~chi_20 mu-)
+     8.05959171E-03    2     1000025        13   # BR(~mu_R- -> ~chi_30 mu-)
+     2.05019980E-03    2     1000035        13   # BR(~mu_R- -> ~chi_40 mu-)
+     1.02320303E-02    2     1000045        13   # BR(~mu_R- -> ~chi_50 mu-)
+#         PDG            Width
+DECAY   1000015     1.32910155E+01   # stau_1
+#                    stau1 2-body decays
+#          BR         NDA      ID1       ID2
+     2.02115885E-03    2     1000022        15   # BR(~tau_1- -> ~chi_10 tau-)
+     3.66695695E-01    2     1000023        15   # BR(~tau_1- -> ~chi_20 tau-)
+     2.12568959E-01    2     1000025        15   # BR(~tau_1- -> ~chi_30 tau-)
+     1.35434335E-03    2     1000035        15   # BR(~tau_1- -> ~chi_40 tau-)
+     9.32962871E-03    2     1000045        15   # BR(~tau_1- -> ~chi_50 tau-)
+     3.56890664E-01    2    -1000024        16   # BR(~tau_1- -> ~chi_1- nu_tau)
+     5.11395513E-02    2    -1000037        16   # BR(~tau_1- -> ~chi_2- nu_tau)
+#         PDG            Width
+DECAY   2000015     1.39793935E+01   # stau_2
+#                    stau_2 2-body decays
+#          BR         NDA      ID1       ID2
+     1.78746765E-03    2     1000022        15   # BR(~tau_2- -> ~chi_10 tau-)
+     3.07048677E-01    2     1000023        15   # BR(~tau_2- -> ~chi_20 tau-)
+     1.96307009E-01    2     1000025        15   # BR(~tau_2- -> ~chi_30 tau-)
+     9.25149102E-03    2     1000035        15   # BR(~tau_2- -> ~chi_40 tau-)
+     4.39932520E-02    2     1000045        15   # BR(~tau_2- -> ~chi_50 tau-)
+     3.12421968E-01    2    -1000024        16   # BR(~tau_2- -> ~chi_1- nu_tau)
+     1.29190136E-01    2    -1000037        16   # BR(~tau_2- -> ~chi_2- nu_tau)
+#         PDG            Width
+DECAY   1000012     1.92456242E+01   # snu_eL
+#                    snu_eL 2-body decays
+#          BR         NDA      ID1       ID2
+     4.05658977E-03    2     1000022        12   # BR(~nu_eL -> ~chi_10 nu_e)
+     1.09344969E-01    2     1000023        12   # BR(~nu_eL -> ~chi_20 nu_e)
+     2.27020314E-01    2     1000025        12   # BR(~nu_eL -> ~chi_30 nu_e)
+     2.68891272E-03    2     1000035        12   # BR(~nu_eL -> ~chi_40 nu_e)
+     5.50802745E-02    2     1000045        12   # BR(~nu_eL -> ~chi_50 nu_e)
+     5.38501043E-01    2     1000024        11   # BR(~nu_eL -> ~chi_1+ e-)
+     6.33078973E-02    2     1000037        11   # BR(~nu_eL -> ~chi_2+ e-)
+#         PDG            Width
+DECAY   1000014     1.92456242E+01   # snu_muL
+#                    snu_muL 2-body decays
+#          BR         NDA      ID1       ID2
+     4.05658977E-03    2     1000022        14   # BR(~nu_muL -> ~chi_10 nu_mu)
+     1.09344969E-01    2     1000023        14   # BR(~nu_muL -> ~chi_20 nu_mu)
+     2.27020314E-01    2     1000025        14   # BR(~nu_muL -> ~chi_30 nu_mu)
+     2.68891272E-03    2     1000035        14   # BR(~nu_muL -> ~chi_40 nu_mu)
+     5.50802745E-02    2     1000045        14   # BR(~nu_muL -> ~chi_50 nu_mu)
+     5.38501043E-01    2     1000024        13   # BR(~nu_muL -> ~chi_1+ mu-)
+     6.33078973E-02    2     1000037        13   # BR(~nu_muL -> ~chi_2+ mu-)
+#         PDG            Width
+DECAY   1000016     1.93719993E+01   # snu_tau1
+#                    sbu_tau1 2-body decays
+#          BR         NDA      ID1       ID2
+     4.03012621E-03    2     1000022        16   # BR(~nu_tau1 -> ~chi_10 nu_tau)
+     1.08631646E-01    2     1000023        16   # BR(~nu_tau1 -> ~chi_20 nu_tau)
+     2.25539325E-01    2     1000025        16   # BR(~nu_tau1 -> ~chi_30 nu_tau)
+     2.67137133E-03    2     1000035        16   # BR(~nu_tau1 -> ~chi_40 nu_tau)
+     5.47209530E-02    2     1000045        16   # BR(~nu_tau1 -> ~chi_50 nu_tau)
+     5.36562483E-01    2     1000024        15   # BR(~nu_tau1 -> ~chi_1+ tau-)
+     6.78440957E-02    2     1000037        15   # BR(~nu_tau1 -> ~chi_2+ tau-)
+#         PDG            Width
+DECAY   1000002     1.95040513E+01   # sup_L
+#                    sup_L 2-body decays
+#          BR         NDA      ID1       ID2
+     5.86335541E-04    2     1000022         2   # BR(~u_L -> ~chi_10 u)
+     4.60583807E-03    2     1000023         2   # BR(~u_L -> ~chi_20 u)
+     1.61691520E-01    2     1000025         2   # BR(~u_L -> ~chi_30 u)
+     5.95747011E-04    2     1000035         2   # BR(~u_L -> ~chi_40 u)
+     2.00839940E-02    2     1000045         2   # BR(~u_L -> ~chi_50 u)
+     3.29634738E-01    2     1000024         1   # BR(~u_L -> ~chi_1+ d)
+     3.46511128E-02    2     1000037         1   # BR(~u_L -> ~chi_2+ d)
+     4.48150714E-01    2     1000021         2   # BR(~u_L -> ~g      u)
+#         PDG            Width
+DECAY   2000002     1.09889850E+01   # sup_R
+#                    sup_R 2-body decays
+#          BR         NDA      ID1       ID2
+     1.25938636E-03    2     1000022         2   # BR(~u_R -> ~chi_10 u)
+     1.94470527E-01    2     1000023         2   # BR(~u_R -> ~chi_20 u)
+     1.55566196E-03    2     1000025         2   # BR(~u_R -> ~chi_30 u)
+     3.59255992E-04    2     1000035         2   # BR(~u_R -> ~chi_40 u)
+     1.75952478E-03    2     1000045         2   # BR(~u_R -> ~chi_50 u)
+     8.00595643E-01    2     1000021         2   # BR(~u_R -> ~g      u)
+#         PDG            Width
+DECAY   1000001     1.95984110E+01   # sdown_L
+#                    sdown_L 2-body decays
+#          BR         NDA      ID1       ID2
+     1.40556603E-03    2     1000022         1   # BR(~d_L -> ~chi_10 d)
+     9.50372584E-03    2     1000023         1   # BR(~d_L -> ~chi_20 d)
+     1.49795872E-01    2     1000025         1   # BR(~d_L -> ~chi_30 d)
+     9.93104719E-04    2     1000035         1   # BR(~d_L -> ~chi_40 d)
+     2.47906116E-02    2     1000045         1   # BR(~d_L -> ~chi_50 d)
+     2.87982607E-01    2    -1000024         2   # BR(~d_L -> ~chi_1- u)
+     6.78382349E-02    2    -1000037         2   # BR(~d_L -> ~chi_2- u)
+     4.57690278E-01    2     1000021         1   # BR(~d_L -> ~g      d)
+#         PDG            Width
+DECAY   2000001     9.41504042E+00   # sdown_R
+#                    sdown_R 2-body decays
+#          BR         NDA      ID1       ID2
+     3.67792951E-04    2     1000022         1   # BR(~d_R -> ~chi_10 d)
+     5.67956440E-02    2     1000023         1   # BR(~d_R -> ~chi_20 d)
+     4.54396095E-04    2     1000025         1   # BR(~d_R -> ~chi_30 d)
+     1.04973313E-04    2     1000035         1   # BR(~d_R -> ~chi_40 d)
+     5.14162888E-04    2     1000045         1   # BR(~d_R -> ~chi_50 d)
+     9.41763031E-01    2     1000021         1   # BR(~d_R -> ~g      d)
+#         PDG            Width
+DECAY   1000004     1.95040513E+01   # scharm_L
+#                    scharm_L 2-body decays
+#          BR         NDA      ID1       ID2
+     5.86335541E-04    2     1000022         4   # BR(~c_L -> ~chi_10 c)
+     4.60583807E-03    2     1000023         4   # BR(~c_L -> ~chi_20 c)
+     1.61691520E-01    2     1000025         4   # BR(~c_L -> ~chi_30 c)
+     5.95747011E-04    2     1000035         4   # BR(~c_L -> ~chi_40 c)
+     2.00839940E-02    2     1000045         4   # BR(~c_L -> ~chi_50 c)
+     3.29634738E-01    2     1000024         3   # BR(~c_L -> ~chi_1+ s)
+     3.46511128E-02    2     1000037         3   # BR(~c_L -> ~chi_2+ s)
+     4.48150714E-01    2     1000021         4   # BR(~c_L -> ~g      c)
+#         PDG            Width
+DECAY   2000004     1.09889850E+01   # scharm_R
+#                    scharm_R 2-body decays
+#          BR         NDA      ID1       ID2
+     1.25938636E-03    2     1000022         4   # BR(~c_R -> ~chi_10 c)
+     1.94470527E-01    2     1000023         4   # BR(~c_R -> ~chi_20 c)
+     1.55566196E-03    2     1000025         4   # BR(~c_R -> ~chi_30 c)
+     3.59255992E-04    2     1000035         4   # BR(~c_R -> ~chi_40 c)
+     1.75952478E-03    2     1000045         4   # BR(~c_R -> ~chi_50 c)
+     8.00595643E-01    2     1000021         4   # BR(~c_R -> ~g      c)
+#         PDG            Width
+DECAY   1000003     1.95984110E+01   # sstrange_L
+#                    sstrange_L 2-body decays
+#          BR         NDA      ID1       ID2
+     1.40556603E-03    2     1000022         3   # BR(~s_L -> ~chi_10 s)
+     9.50372584E-03    2     1000023         3   # BR(~s_L -> ~chi_20 s)
+     1.49795872E-01    2     1000025         3   # BR(~s_L -> ~chi_30 s)
+     9.93104719E-04    2     1000035         3   # BR(~s_L -> ~chi_40 s)
+     2.47906116E-02    2     1000045         3   # BR(~s_L -> ~chi_50 s)
+     2.87982607E-01    2    -1000024         4   # BR(~s_L -> ~chi_1- c)
+     6.78382349E-02    2    -1000037         4   # BR(~s_L -> ~chi_2- c)
+     4.57690278E-01    2     1000021         3   # BR(~s_L -> ~g      s)
+#         PDG            Width
+DECAY   2000003     9.41504042E+00   # sstrange_R
+#                    sstrange_R 2-body decays
+#          BR         NDA      ID1       ID2
+     3.67792951E-04    2     1000022         3   # BR(~s_R -> ~chi_10 s)
+     5.67956440E-02    2     1000023         3   # BR(~s_R -> ~chi_20 s)
+     4.54396095E-04    2     1000025         3   # BR(~s_R -> ~chi_30 s)
+     1.04973313E-04    2     1000035         3   # BR(~s_R -> ~chi_40 s)
+     5.14162888E-04    2     1000045         3   # BR(~s_R -> ~chi_50 s)
+     9.41763031E-01    2     1000021         3   # BR(~s_R -> ~g      s)
+#         PDG            Width
+DECAY   1000006     1.72525230E+01   # stop1
+#                    stop1 2-body decays
+#          BR         NDA      ID1       ID2
+     2.77338732E-02    2     1000022         6   # BR(~t_1 -> ~chi_10 t )
+     4.54476532E-02    2     1000023         6   # BR(~t_1 -> ~chi_20 t )
+     3.86863003E-02    2     1000025         6   # BR(~t_1 -> ~chi_30 t )
+     1.65808392E-01    2     1000035         6   # BR(~t_1 -> ~chi_40 t )
+     3.23065712E-01    2     1000045         6   # BR(~t_1 -> ~chi_50 t )
+     4.38857811E-02    2     1000024         5   # BR(~t_1 -> ~chi_1+ b )
+     3.55372289E-01    2     1000037         5   # BR(~t_1 -> ~chi_2+ b )
+#         PDG            Width
+DECAY   2000006     4.79035694E+01   # stop2
+#                    stop2 2-body decays
+#          BR         NDA      ID1       ID2
+     2.09293336E-02    2     1000022         6   # BR(~t_2 -> ~chi_10 t )
+     2.87736984E-02    2     1000023         6   # BR(~t_2 -> ~chi_20 t )
+     7.13241505E-02    2     1000025         6   # BR(~t_2 -> ~chi_30 t )
+     1.42295038E-01    2     1000035         6   # BR(~t_2 -> ~chi_40 t )
+     6.12189668E-02    2     1000045         6   # BR(~t_2 -> ~chi_50 t )
+     1.63426831E-01    2     1000024         5   # BR(~t_2 -> ~chi_1+ b )
+     6.22928210E-02    2     1000037         5   # BR(~t_2 -> ~chi_2+ b )
+     4.01856133E-01    2     1000021         6   # BR(~t_2 -> ~g      t )
+     1.99379601E-08    2     1000006        25   # BR(~t_2 -> ~t_1    H1 )
+     5.94017029E-07    2     1000006        35   # BR(~t_2 -> ~t_1    H2 )
+     2.17686381E-14    2     1000006        36   # BR(~t_2 -> ~t_1    A1 )
+     4.63575828E-02    2     1000006        23   # BR(~t_2 -> ~t_1    Z )
+     1.10220536E-04    2     1000005        24   # BR(~t_2 -> ~b_1    W+)
+     1.41460967E-03    2     2000005        24   # BR(~t_2 -> ~b_2    W+)
+#         PDG            Width
+DECAY   1000005     1.46031551E+01   # sbottom1
+#                    sbottom1 2-body decays
+#          BR         NDA      ID1       ID2
+     6.01940891E-04    2     1000022         5   # BR(~b_1 -> ~chi_10 b )
+     3.44458574E-02    2     1000023         5   # BR(~b_1 -> ~chi_20 b )
+     6.19502525E-02    2     1000025         5   # BR(~b_1 -> ~chi_30 b )
+     2.19203996E-03    2     1000035         5   # BR(~b_1 -> ~chi_40 b )
+     1.62388880E-03    2     1000045         5   # BR(~b_1 -> ~chi_50 b )
+     1.30555331E-01    2    -1000024         6   # BR(~b_1 -> ~chi_1- t )
+     1.60276068E-01    2    -1000037         6   # BR(~b_1 -> ~chi_2- t )
+     5.94926839E-01    2     1000021         5   # BR(~b_1 -> ~g      b )
+     1.34277822E-02    2     1000006       -24   # BR(~b_1 -> ~t_1    W-)
+#         PDG            Width
+DECAY   2000005     2.42404311E+01   # sbottom2
+#                    sbottom2 2-body decays
+#          BR         NDA      ID1       ID2
+     9.06919015E-04    2     1000022         5   # BR(~b_2 -> ~chi_10 b )
+     8.91857493E-03    2     1000023         5   # BR(~b_2 -> ~chi_20 b )
+     8.23247314E-02    2     1000025         5   # BR(~b_2 -> ~chi_30 b )
+     4.57808483E-03    2     1000035         5   # BR(~b_2 -> ~chi_40 b )
+     2.23478225E-02    2     1000045         5   # BR(~b_2 -> ~chi_50 b )
+     1.77993761E-01    2    -1000024         6   # BR(~b_2 -> ~chi_1- t )
+     3.52034883E-01    2    -1000037         6   # BR(~b_2 -> ~chi_2- t )
+     3.34002186E-01    2     1000021         5   # BR(~b_2 -> ~g      b )
+     1.61407929E-02    2     1000006       -24   # BR(~b_2 -> ~t_1    W-)
